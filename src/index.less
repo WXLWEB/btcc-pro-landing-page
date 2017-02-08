@@ -1,0 +1,68 @@
+@bgColor: #fff;
+@fontFamily: 'Open Sans Regular',
+'Open Sans',
+Tahoma,
+Arial,
+'Hiragino Sans GB',
+"Microsoft YaHei",
+"微软雅黑",
+sans-serif;
+html,
+body,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+      opacity:  0.5;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      opacity:  0.5;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+      opacity:  0.5;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+      opacity:  0.5;
+    }
+}
+
+html,body{
+    font-size: 12px;
+    background: @bgColor;
+    font-family: @fontFamily;
+    color: #333333;
+    height: 100%;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+input,button,a{
+   outline: 0;
+}
+
+.auth-mask-new .auth-container .authentication #sign_in_form .checkbox-item label input {
+    margin-left: -19px;
+}
+
+.empty~#root {
+  .home{
+    margin-top: -36px;
+  }
+}
+
+#root {
+  .home{
+    min-width: 1190px;
+  }
+}
+
+#footer {
+    min-width: 1190px;
+}

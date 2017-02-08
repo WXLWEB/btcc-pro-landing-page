@@ -1,0 +1,17 @@
+machine:
+  node:
+    version: 6.7
+general:
+  branches:
+    only:
+      - master
+      - develop
+deployment:
+  production:
+    branch: master
+    commands:
+      - npm prod build
+  staging:
+    branch: develop
+    commands:
+      - npm staging build

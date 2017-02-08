@@ -1,0 +1,74 @@
+.instantbuysell{
+  display: flex;
+  margin-top: -8px;
+  padding: 0 15px;
+  .grid-4{
+    margin: 10px 7.5px;
+    &:first-of-type{
+      margin-left: 0;
+    }
+    &:last-of-type{
+      margin-right: 0;
+    }
+  }
+  .price{
+    color: #fff;
+    font-size: 12px;
+    padding-right: 7px;
+    line-height: 26px;
+  }
+  button{
+    height: 38px;
+    line-height: 38px;
+    font-weight: lighter;
+    padding: 0 30px;
+    color:#fff;
+    border: none;
+    border-radius: 2px;
+    font-size: 14px;
+    &:hover,&:focus,&:active{
+      cursor: pointer;
+    }
+    &.buy{
+      background-color: rgba(33,153,71,0.8);
+    }
+    &.sell{
+      background-color: rgba(209,50,50,0.8);
+    }
+  }
+  .input-group{
+    height: 36px;
+    display: table;
+    border: 1px solid rgba(0,0,0,0.2);
+    &.error{
+      border: 1px solid #B54050;
+    }
+    .input-group-addon{
+      background-color: rgba(0,0,0,0.2);
+      display: table-cell;
+      padding:0 3px 0;
+      border: none;
+      border-top-left-radius: 2px;
+      border-bottom-left-radius: 2px;
+      &:first-of-type{
+        padding-left: 10px;
+      }
+      &:last-of-type{
+        padding:0 10px 0 0;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+      }
+    }
+    input{
+      height: 36px;
+      width: 100%;
+      display: table-cell;
+      text-align: right;
+      color: #fff;
+      border: none;
+      font-size: 14px;
+      padding: 4px 0;
+      background-color: rgba(0,0,0,0.2);
+    }
+  }
+}
