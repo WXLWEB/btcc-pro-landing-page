@@ -3,14 +3,10 @@ import { connect } from 'react-redux';
 
 import Header from './header';
 import Banner from './ibanner';
-import Affiliate from './affiliate';
-import Liquidity from './liquidity';
 import Support from './support';
 import Tos from './tos';
-import Download from './download';
 import AppLink from './appLink';
 import Introduce from './introduce';
-import TradeUI from './tradeUI';
 
 import './index.less';
 import { IcontentProps, IcontentState, IaLLMapState } from '../../../constants/AppType';
@@ -58,10 +54,6 @@ class Home extends React.Component<IcontentProps, IcontentState> {
                 <div id='reactGeneralActivity'></div>
                 <Banner />
                 <Introduce />
-                <TradeUI />
-                <Liquidity />
-                <Affiliate />
-                <Download />
                 <Support />
                 <AppLink />
             </div>

@@ -4,43 +4,43 @@ import { FormattedMessage } from 'react-intl';
 import './introduce.less';
 import { IintroduceProps, IintroduceState } from '../../../constants/AppType';
 
-const img01 = require('../../../resources/images/leaf_landingpage_image_1.png');
-const img02 = require('../../../resources/images/leaf_landingpage_image_2.png');
-const img03 = require('../../../resources/images/leaf_landingpage_image_3.png');
-const arrowImg = require('../../../resources/images/pro_landing_icon_grayarrow.png');
+const img01 = require('../../../resources/images/pro_landing_pic_01.png');
+const img02 = require('../../../resources/images/pro_landing_pic_02.png');
 class Introduce extends React.Component<IintroduceProps, IintroduceState> {
     render() {
         return (
             <section className='content_introduce'>
                 <ul>
-                    <li id='gateway'>
+                    <li>
                         <div className='inner'>
-                            <img src={img01} />
                             <div className='inner_content'>
                                 <h3><span><FormattedMessage id='pro_exchange_landing_page_label_gateway_exchange' /></span></h3>
                                 <p><FormattedMessage id='pro_exchange_landing_page_text_gateway_exchange' /></p>
                             </div>
+                            <div>
+                              <img src={img01} />
+                            </div>
                         </div>
                     </li>
-                    <li id='entry'>
+                    <li>
                         <div className='inner'>
                             <div className='inner_content'>
                                 <h3><span><FormattedMessage id='pro_exchange_landing_page_label_easy_entry' /></span></h3>
                                 <p><FormattedMessage id='pro_exchange_landing_page_text_easy_entry' /></p>
                             </div>
-                            <img src={img02} />
+                            <div>
+                              <img src={img02} />
+                            </div>
                         </div>
                     </li>
-                    <li id='funding'>
+                    <li>
                         <div className='inner'>
-                            <img src={img03} />
                             <div className='inner_content'>
-                                <h3><span><FormattedMessage id='pro_exchange_landing_page_label_fast_funding' /></span></h3>
-                                <p><FormattedMessage id='pro_exchange_landing_page_text_fast_funding' /></p>
-                                <ul>
-                                    <div className='item'><img src={arrowImg} /><li><FormattedMessage id='pro_exchange_landing_page_text_fast_funding_1' /></li></div>
-                                    <div className='item'><img src={arrowImg} /><li><FormattedMessage id='pro_exchange_landing_page_text_fast_funding_2' /></li></div>
-                                </ul>
+                                <h3><span><FormattedMessage id='pro_exchange_landing_page_label_easy_entry' /></span></h3>
+                                <p><FormattedMessage id='pro_exchange_landing_page_text_easy_entry' /></p>
+                            </div>
+                            <div>
+                              <img src={img02} />
                             </div>
                         </div>
                     </li>

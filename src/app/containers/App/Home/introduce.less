@@ -1,12 +1,16 @@
 .content_introduce {
     >ul {
         >li {
-            height: 330px;
+          &:nth-last-child(2n+1){
+            background: #f4f4f4;
+          }
+            height: 830px;
             .inner {
                 display: flex;
                 justify-content: space-between;
-                max-width: 1190px;
-                min-width: 1190px;
+                flex-direction: column;
+                max-width: 640px;
+                min-width: 640px;
                 margin: 0 auto;
                 margin-top: -17px;
                 .inner_content {
@@ -26,7 +30,7 @@
             font-size: 23px;
             color: #333333;
             span {
-                border-bottom: solid 1px #adadad; 
+                border-bottom: solid 1px #adadad;
                 padding-bottom: 5px;
             }
         }
@@ -35,11 +39,7 @@
             font-size: 18px;
             color: #868686;
         }
-        #gateway {
-            background: #f4f4f4;
-        }
         #funding {
-            background: #f4f4f4;
             ul {
                 margin-top: 20px;
                 .item {
