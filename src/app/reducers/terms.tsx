@@ -5,9 +5,9 @@ const initialState = new(ITerms);
 
 export default function terms(state: ITerms = initialState, action: ITermsAction) {
     switch (action.type) {
-        case 'get spot balance success':
-            return state.update('accept', v => action.payload.spotusd_tos_accepted);
-        case 'get spot balance failed':
+        case 'get account info success':
+            return state.update('accept', v => action.payload.forwards_tos_accepted);
+        case 'get account info failed':
             return state;
         case 'agree tos success':
             return state.update('accept', v => true);

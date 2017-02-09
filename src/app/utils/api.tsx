@@ -12,6 +12,10 @@ const spotusd = (method, params) => {
   return jsonrpcFetch('/api.php/spotusd', method, params);
 };
 
+const procny = (method, params) => {
+  return jsonrpcFetch('/api.php', method, params);
+};
+
 const logout = async () => {
   return await account('logout', {}).then((data) => {
     if (typeof data === 'boolean' && data) {
@@ -43,7 +47,7 @@ const getTicker = async () => {
 };
 
 const getTos = async (lang) => {
-  return await fetch(`${HOME_URL}/content/spot-usd-home-term-of-service?lang=${lang.lang}`).then((response) => {
+  return await fetch(`${HOME_URL}/content/terms-of-service?lang=${lang.lang}`).then((response) => {
     return response.text();
   }).then((response) => {
     return response;
@@ -59,7 +63,7 @@ const getSpotBalance = async () => {
 };
 
 const agreeTos = async () => {
-  return await spotusd('agreeTos', { 'version': '1.0' }).then((data) => {
+  return await procny('agreeFuturesTerms', { 'version': '1.0' }).then((data) => {
       return data;
     });
 };

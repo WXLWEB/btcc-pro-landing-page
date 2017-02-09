@@ -22,7 +22,7 @@ class Header extends React.Component<IheaderProps, IheaderState> {
     handleClick = (type: string) => {
         this.props.actions.setTermsFrom({from: type});
         if (type === 'trade' && !this.props.account.get('content').get('id')) {
-            window.location.href = `${BASE_URL}/trade/btcusd`;
+            window.location.href = `${BASE_URL}/trade/xbtcny`;
         }else if (!this.props.account.get('content').get('id')) {
             if (document.getElementById('sign_in_btn')) {
                 document.getElementById('sign_in_btn').click();
@@ -34,7 +34,7 @@ class Header extends React.Component<IheaderProps, IheaderState> {
         } else if (type === 'account') {
             window.location.href = `${BASE_URL}/account/overview`;
         } else {
-            window.location.href = `${BASE_URL}/trade/btcusd`;
+            window.location.href = `${BASE_URL}/trade/xbtcny`;
         }
     }
     componentDidMount() {

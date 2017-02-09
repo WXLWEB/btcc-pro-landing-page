@@ -52,7 +52,7 @@ class App extends React.Component<IappProps, IappState> {
       checkAccountTime = setInterval(this.checkJwt, 1000);
     } else {
       this.props.actions.getAccountInfo();
-      this.props.actions.getSpotBalance();
+      // this.props.actions.getSpotBalance();
     }
   }
 
@@ -73,7 +73,7 @@ class App extends React.Component<IappProps, IappState> {
     this.checkJwt();
     this.props.actions.getAccountInfo();
     this.props.actions.getTos({ lang: this.props.lang });
-    this.props.actions.getSpotBalance();
+    // this.props.actions.getSpotBalance();
     this.props.actions.connectSocket();
   }
 

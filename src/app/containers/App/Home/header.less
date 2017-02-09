@@ -28,6 +28,7 @@
     background-size: cover;
     position: relative;
     margin-top: 36px;
+    overflow: hidden;
     #container_banner{
       background: -webkit-linear-gradient(#242b33 0%, #434f5d 100%);
       background: linear-gradient(#242b33 0%, #434f5d 100%);
@@ -130,6 +131,9 @@
                 }
             }
             .split-btn-withoutba {
+                &:hover,&:active{
+                  cursor: pointer;
+                }
                 .betaAfter {
                     color: #fff;
                     font-size: 11px;
